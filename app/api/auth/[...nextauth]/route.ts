@@ -5,7 +5,7 @@ import prisma from '@/app/libs/db'
 import bcrypt from 'bcrypt';
 import { NextResponse } from 'next/server';
 
-export const authOptions = {
+const authOptions = {
     providers: [
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID as string,
