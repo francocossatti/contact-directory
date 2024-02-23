@@ -38,9 +38,8 @@ interface User {
     createdAt: Date;
   }
 
-export default function sideBar() {
+export default function SideBar() {
     const [open, setOpen] = useState(false);
-    const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState<User[]>([]);
     const router = useRouter()
     const { data: session, status } = useSession()

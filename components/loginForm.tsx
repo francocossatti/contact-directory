@@ -11,7 +11,7 @@ import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import theme from "@/app/theme";
 
-export default function loginForm() {
+export default function LoginForm() {
     const router = useRouter()
     const [error, setError] = useState("")
     const { register, handleSubmit, formState:{errors} } = useForm()
