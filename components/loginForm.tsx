@@ -102,7 +102,7 @@ export default function LoginForm() {
                         <Button variant="contained" type="submit" sx={{backgroundColor: theme.palette.background.default, color: '#fff', '&:hover': {backgroundColor: '#242020'}, fontSize: '2vh', marginRight: '1vw'}}>Login</Button>
                         <Button variant="contained" startIcon={<FcGoogle />} sx={{ backgroundColor: theme.palette.background.default, color: '#fff', '&:hover': {backgroundColor: '#242020'}}} onClick={() => signIn('google', { callbackUrl: '/dashboard' })}>Sign in with Google</Button>                    
                     </Box>
-                    <Typography>Don't have an account? <Button sx={{fontSize: '2vh'}} onClick={() => router.push('/register')}>Register</Button></Typography>
+                    <Typography>Don&apos;t have an account? <Button sx={{fontSize: '2vh'}} onClick={() => router.push('/register')}>Register</Button></Typography>
                 </Paper>
             </form>
         </Container>
