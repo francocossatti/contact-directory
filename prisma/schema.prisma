@@ -3,7 +3,7 @@
 
 datasource db {
   provider = "postgresql"
-  url      = env("POSTGRES_PRISMA_URL?connect_timeout=10&pgbouncer=true")
+  url      = env("POSTGRES_PRISMA_URL)
 }
 
 generator client {
